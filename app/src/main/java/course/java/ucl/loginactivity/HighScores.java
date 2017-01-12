@@ -128,7 +128,6 @@ public class HighScores extends ListFragment
             Attempt attempt = getItem(position);
             final TextView titleTextView = (TextView) convertView.findViewById(R.id.users_list_title);
             titleTextView.setText(attempt.getUserName());
-            UserHistory history = userandHistory.get(attempt.getUserName());
             TextView textViewScore = (TextView) convertView.findViewById(R.id.current_score);
             textViewScore.setText(Integer.toString(attempt.getScore()));
             titleTextView.setTag(position);
